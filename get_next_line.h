@@ -13,11 +13,9 @@
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# include <stdio.h> /* Для printf */
-# include <fcntl.h> /* Для open */
-# include <unistd.h> /* Для  */
-# include <stdlib.h> /* Для malloc и free */
-# define BUFFER_SIZE 50
+# include <fcntl.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 size_t	ft_strlen(const char *s);
 
