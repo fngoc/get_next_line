@@ -50,7 +50,8 @@ char	*ft_strchr(const char *s, int c)
 }
 
 /*
-** chek_line: проверка.
+** chek_line: проверка статической переменной
+** на остаток.
 */
 
 char	*chek_line(char *static_str, char **line)
@@ -89,6 +90,8 @@ int		get_next_line(int fd, char **line)
 	char		*tmp_for_free;
 	int			end_read;
 
+	if (fd < 0 || ft_strlen(buf) == 1)
+		return (-1);
 	p_n = chek_line(static_str, line);
 	while (!p_n && (end_read = read(fd, buf, BUFFER_SIZE)))
 	{
@@ -103,17 +106,4 @@ int		get_next_line(int fd, char **line)
 		free(tmp_for_free);
 	}
 	return ((end_read || ft_strlen(static_str) || ft_strlen(*line)) ? 1 : 0);
-}
-
-int		main(void)
-{
-	char	*line;
-	int		fd;
-
-	fd = open("text.txt", O_RDONLY);
-	get_next_line(fd, &line);
-	printf("%s\n\n", line);
-	get_next_line(fd, &line);
-	printf("%s\n", line);
-	return (0);
 }
