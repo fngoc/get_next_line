@@ -90,7 +90,7 @@ int		get_next_line(int fd, char **line)
 	char		*tmp_for_free;
 	int			end_read;
 
-	if (fd < 0 || ft_strlen(buf) == 1)
+	if (BUFFER_SIZE <= 0 || !line || (-1 == read(fd, buf, 0)))
 		return (-1);
 	p_n = chek_line(static_str, line);
 	while (!p_n && (end_read = read(fd, buf, BUFFER_SIZE)))
@@ -105,5 +105,5 @@ int		get_next_line(int fd, char **line)
 		*line = ft_strjoin(*line, buf);
 		free(tmp_for_free);
 	}
-	return ((end_read || ft_strlen(static_str) || ft_strlen(*line)) ? 1 : 0);
+	return (p_n ? 1 : 0);
 }
