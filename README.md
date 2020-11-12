@@ -9,3 +9,7 @@ get_next_line - второй проект в School 21. Будь то файл, 
 Компилирование было с флагами: "gcc -Wall -Wextra -Werror".
 
 Все файлы проходят на Norminette.
+
+## my_test
+
+Закидываем ``main.c`` и ``text.txt`` в папку с ``get_next_line``, после чего компилируем ``gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line.c get_next_line_utils.c main.c``. Запускаем ``a.out``, так же можем проверить на лики с помощью команды ``leaks a.out``.
