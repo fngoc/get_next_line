@@ -52,7 +52,8 @@ char	*ft_strchr(const char *s, int c)
 }
 
 /*
-** chek_line: проверка.
+** chek_line: проверка статической переменной
+** на остаток.
 */
 
 char	*chek_line(char **static_str, char **line)
