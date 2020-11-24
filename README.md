@@ -12,7 +12,7 @@ get_next_line - второй проект в School 21. Будь то файл, 
 
 ## Оценка
 
-![alt tag](https://downloader.disk.yandex.ru/preview/4631d8b6083309f4849db081d6d566546dc57a130b028c83448849e0720cf9e1/5fbc45d8/tm800Zmi4lNeiRSoOKmIZVEY-chzlEpMqJAkxRwUjdDXcUdOUxcOqVkFl1NrL_6R_nldH5qDsOawB6Or4f5vSw%3D%3D?uid=0&filename=appraisal_get_next_line.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048 "Оценка проекта get_next_line")
+![alt tag](media/appraisal_get_next_line.png "Оценка проекта get_next_line")
 
 ## my_test
 
