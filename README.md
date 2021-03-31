@@ -1,19 +1,25 @@
 # get_next_line
 
-## Описание
+## Description
 
-Будь то файл, стандартный ввод или даже сетевое соединение, нам всегда понадобится способ чтения содержимого построчно. Пришло время начать работу над этой функцией, которая будет необходима для наших будущих проектов.
+A function that allows you to read content line by line from standard input or from a file.
 
-В этом проекте мы используем некоторые функции из libft, так же некоторые функции мы модифицируем.
+In this project, we use some functions from [my libft library](https://github.com/VitMarKha/libft), as well as some functions we modify.
 
-Компилирование было с флагами: ``gcc -Wall -Wextra -Werror``.
+The compilation was with flags: ``gcc -Wall -Wextra -Werror``.
 
-Все файлы проходят на ``Norminette``.
+All files pass to ``Norminette``.
 
-## Оценка
+No memory leaks.
 
-![alt tag](media/appraisal_get_next_line.png "Оценка проекта get_next_line")
+## Using
+
+Write a prototype of the ``int get_next_line(int fd, char **line)`` function in your project. In your ``h`` file, write what ``BUFFER_SIZE`` will be equal to so that you do not have to write its value on the command line when compiling.
 
 ## my_test
 
-Закидываем ``main.c`` и ``text.txt`` в папку с ``get_next_line``, после чего компилируем ``gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line.c get_next_line_utils.c main.c``. Запускаем ``a.out``, так же можем проверить на лики с помощью команды ``leaks a.out``.
+Moving ``main.c`` and ``text.txt`` to the folder with ``get_next_line``, then compile ``gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line.c get_next_line_utils.c main.c``. Run ``a.out``, we can also check for leaks using the command ``leaks a.out``.
+
+## Evaluation
+
+![alt tag](media/appraisal_get_next_line.png "Appraisal get_next_line")
