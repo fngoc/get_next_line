@@ -19,7 +19,3 @@ Write a prototype of the ``int get_next_line(int fd, char **line)`` function in 
 ## my_test
 
 Moving ``main.c`` and ``text.txt`` to the folder with ``get_next_line``, then compile ``gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line.c get_next_line_utils.c main.c``. Run ``a.out``, we can also check for leaks using the command ``leaks a.out``.
-
-## Evaluation
-
-![alt tag](media/appraisal_get_next_line.png "Appraisal get_next_line")
