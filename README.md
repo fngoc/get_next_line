@@ -12,7 +12,7 @@ All files pass to ``Norminette``.
 
 No memory leaks.
 
-## Using
+## Usage
 
 Write a prototype of the ``int get_next_line(int fd, char **line)`` function in your project. In your ``h`` file, write what ``BUFFER_SIZE`` will be equal to so that you do not have to write its value on the command line when compiling.
 
